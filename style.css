@@ -1,3 +1,25 @@
+body {
+    background: white;
+}
+
 h1 {
-    color: green;
+    color: black;
+    padding: 4%;
+}
+
+footer {
+    text-align: right;
+    padding-bottom: 4%;
+}
+
+#quote-text {
+    height: 8rem;
+}
+
+i {
+    vertical-align: middle;
+}
+
+button {
+    height: 5rem;
 }

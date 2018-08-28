@@ -1,1 +1,1 @@
-# Starting point for pages using JS, jQuery, bootstrap and PHP
+# Random quote page for FCC project
