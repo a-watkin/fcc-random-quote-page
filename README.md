@@ -13,3 +13,5 @@ Uses:
 3. Font awesome
 4. restfulAPI from kong
 5. Twitter - retweet code
+
+## No longer working on CodePen, seems to be a CORS error unrelated to the project
