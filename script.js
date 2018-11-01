@@ -18,13 +18,14 @@ $(document).ready(function() {
   });
 
   function getQuote() {
+    console.log("clicked on get new quote");
     $.ajax({
-      headers: {
-        "X-Mashape-Key": "mtyC8PM1PzmshPEq4FVntooQ9PsXp1IHWyIjsnPSncF7Si9EAn",
-        Accept: "application/json",
-        "Content-Type": "application/x-www-form-urlencoded"
-      },
-      url: "https://quotes.p.mashape.com/",
+      //   headers: {
+      //     "X-Mashape-Key": "Kx8KP5yqLNmshWDGIZHPAvFilBYgp1XSW6bjsnWCbOyKCn62xu",
+      //     Accept: "application/json",
+      //     "Content-Type": "application/x-www-form-urlencoded"
+      //   },
+      url: "https://talaikis.com/api/quotes/random/",
       success: function(r) {
         if (typeof r === "string") {
           r = JSON.parse(r);
@@ -32,10 +33,10 @@ $(document).ready(function() {
 
         $("#quote-text").html(r.quote);
         $("#quote-author").html(r.author + " said that:");
-        $("#quote-source").html("Quote category: " + r.category);
-        // console.log(r + " " + r.quote);
-        // console.log(r.author);
-        // console.log(r.category);
+        // $("#quote-source").html("Quote category: " + r.category);
+        console.log(r + " " + r.quote);
+        console.log(r.author);
+        console.log(r.category);
 
         currentQuote = r.quote;
         currentAuthor = r.author;
