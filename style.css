@@ -17,10 +17,14 @@ footer {
 }
 
 #quote-text {
+  min-height: 5em;
   /* padding: 2em; */
   /* height: 10rem; */
   /* border: solid; */
   /* background: green; */
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  display: -webkit-box;
 }
 
 i {

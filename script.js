@@ -1,6 +1,5 @@
 $(document).ready(function() {
   var currentQuote;
-  var currentAuthor;
 
   function openURL(url) {
     window.open(
@@ -17,8 +16,10 @@ $(document).ready(function() {
         Authorization: "token 389fcce7c8a1352976f33821bd4223aad7f50df8"
       }
     })
-      .then(res => res.json())
-      .then(json => console.log(json));
+      .then(res => res.text())
+      .then(quote => {
+        $("#quote-text").html(quote), (currentQuote = quote);
+      });
   }
 
   $("#get-another-quote-button").on("click", function() {
@@ -28,7 +29,11 @@ $(document).ready(function() {
   $("#tweet-quote").on("click", function() {
     openURL(
       "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" +
-        encodeURIComponent('"' + currentQuote + '" ' + currentAuthor)
+        encodeURIComponent(
+          '"' + currentQuote + '"' + " A quote from the GitHub API"
+        )
     );
   });
+
+  getQuote();
 });
