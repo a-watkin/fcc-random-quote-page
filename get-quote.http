@@ -1,6 +1,10 @@
 GET https://api.github.com/zen
-content-type: application/json
+# content-type: application/json
 
 {
-    "username": " 389fcce7c8a1352976f33821bd4223aad7f50df8"
+    headers: {
+
+        "Authorization: token 389fcce7c8a1352976f33821bd4223aad7f50df8"
+
+    }
 }

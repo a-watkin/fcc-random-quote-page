@@ -11,10 +11,14 @@ $(document).ready(function() {
   }
 
   function getQuote() {
-    // Practical example
-    fetch("https://jsonplaceholder.typicode.com/todos")
-      .then(response => response.json())
-      .then(data => console.log(JSON.stringify(data)));
+    fetch("https://api.github.com/zen", {
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "token 389fcce7c8a1352976f33821bd4223aad7f50df8"
+      }
+    })
+      .then(res => console.log(res.json()))
+      .then(json => console.log(json));
   }
 
   $("#get-another-quote-button").on("click", function() {
