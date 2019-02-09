@@ -15,3 +15,6 @@ Uses:
 5. Twitter - retweet code
 
 ## No longer working on CodePen, seems to be a CORS error unrelated to the project
+
+Put it on git hub pages here - still boken:
+[Live on github pages here]('https://a-watkin.github.io/fcc-random-quote-page')
