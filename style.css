@@ -1,25 +1,33 @@
 body {
-    background: white;
+  background: white;
 }
 
 h1 {
-    color: black;
-    padding: 4%;
+  color: black;
+  padding: 4%;
+}
+
+#quote-area {
+  border: 1px solid black;
 }
 
 footer {
-    text-align: right;
-    padding-bottom: 4%;
+  text-align: right;
+  padding-bottom: 4%;
 }
 
 #quote-text {
-    height: 8rem;
+  /* padding: 2em; */
+  /* height: 10rem; */
+  /* border: solid; */
+  /* background: green; */
 }
 
 i {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 button {
-    height: 5rem;
+  height: 5rem;
+  /* width: 20rem; */
 }

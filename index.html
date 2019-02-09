@@ -1,78 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Optional JavaScript -->
+    <!-- jQuery first (with ajax here), then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <!-- Optional JavaScript -->
-  <!-- jQuery first (with ajax here), then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js">
-  </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
-  </script>
+    <!-- Font awesome icons -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+    ></script>
 
-  <!-- Font awesome icons -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js">
-  </script>
+    <!-- my css file -->
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- my css file -->
-  <link rel="stylesheet" href="style.css">
+    <!-- my script file -->
+    <script src="script.js"></script>
 
-  <!-- my script file -->
-  <script src="script.js"></script>
+    <!-- To Do update the title -->
+    <title>Insert title here</title>
+  </head>
 
-  <!-- To Do update the title -->
-  <title>Insert title here</title>
-
-</head>
-
-<body>
-  <div class="container">
-
-    <div class="row">
-      <div class="col-12 text-center">
-        <h1 class="">I'm just a quote machine</h1>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="">I'm just a quote machine</h1>
+        </div>
       </div>
-    </div>
 
-    <div class="card">
-      <div class="card-header">
-        <span id="quote-author"></span>
-      </div>
-      <div class="card-body">
-        <blockquote class="blockquote mb-0">
-          <p id="quote-text"></p>
-          <footer class="blockquote-footer"><cite title="Source Title" id="quote-source"></cite></footer>
-
-
-          <div class="row">
-            <div class="col-6 ">
-              <!-- Tweet this quote -->
-              <button type="button" class="btn btn-primary btn-lg active" id="tweet-quote">
-                <a>
-                  <i class='fab fa-twitter fa-2x' aria-hidden='true'></i>
-                </a> <span class="align-middle"></span>
-                <span class="align-middle"></span>
-              </button>
+      <div class="card">
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <div class="row">
+              <div class="col my-auto">
+                <h2 id="quote-text" class="text-center"></h2>
+              </div>
             </div>
 
-            <div class="col-6 text-right">
-              <button type="button" class="btn btn-primary btn-lg active" id="get-another-quote-button">
-                New quote
-              </button>
+            <!-- buttons -->
+            <div class="row">
+              <div class="col-6 ">
+                <!-- Tweet this quote -->
+                <button
+                  type="button"
+                  class="btn btn-primary btn-lg active"
+                  id="tweet-quote"
+                >
+                  <a>
+                    <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+                  </a>
+                  <span class="align-middle"></span>
+                  <span class="align-middle"></span>
+                </button>
+              </div>
+
+              <!-- new quote -->
+              <div class="col-6 text-right">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-lg active"
+                  id="get-another-quote-button"
+                >
+                  New quote
+                </button>
+              </div>
             </div>
-          </div>
-
-
-        </blockquote>
+          </blockquote>
+        </div>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>

@@ -1,0 +1,6 @@
+GET https://api.github.com/zen
+content-type: application/json
+
+{
+    "username": " 389fcce7c8a1352976f33821bd4223aad7f50df8"
+}
