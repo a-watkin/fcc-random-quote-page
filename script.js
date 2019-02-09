@@ -11,14 +11,14 @@ $(document).ready(function() {
   }
 
   function getQuote() {
-    fetch(`https://api.github.com/zen`, {
-      headers: {
-        "Content-Type": "application/json",
-        username: "389fcce7c8a1352976f33821bd4223aad7f50df8"
-      }
-    }).then(function(res) {
-      console.log(res, res.json());
-    });
+    fecth(url)
+      .then(response.something) // Define response type (JSON, Headers, Status codes)
+      .then(data); // get the response type
+
+    // Practical example
+    fetch("https://jsonplaceholder.typicode.com/todos")
+      .then(response => response.json())
+      .then(data => console.log(JSON.stringify(data)));
   }
 
   $("#get-another-quote-button").on("click", function() {
