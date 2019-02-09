@@ -17,7 +17,7 @@ $(document).ready(function() {
         Authorization: "token 389fcce7c8a1352976f33821bd4223aad7f50df8"
       }
     })
-      .then(res => console.log(res.json()))
+      .then(res => res.json())
       .then(json => console.log(json));
   }
 
