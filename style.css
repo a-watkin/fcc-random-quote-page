@@ -18,10 +18,7 @@ footer {
 
 #quote-text {
   min-height: 5em;
-  /* padding: 2em; */
-  /* height: 10rem; */
-  /* border: solid; */
-  /* background: green; */
+  /* centre in column */
   -webkit-box-align: center;
   -webkit-box-pack: center;
   display: -webkit-box;
@@ -32,6 +29,5 @@ i {
 }
 
 button {
-  height: 5rem;
-  /* width: 20rem; */
+  height: 4rem;
 }
