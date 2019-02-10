@@ -14,5 +14,4 @@ Uses:
 4. GitHub API
 5. Twitter - retweet code
 
-Put it on git hub pages here:
 [Live on github pages here](https://a-watkin.github.io/fcc-random-quote-page)
